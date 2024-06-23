@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+
+    html, body, :root {
+        @apply h-[100%] p-0 m-0
+    }
+
+    .scale-up{
+        @apply  ring-primary ring-offset-[16px] -translate-y-[2px]  ring-[7px] scale-105 z-10    
+
+    }
+
+    .scale-down{
+        @apply ring-0 scale-90 z-0  translate-y-0   
+    }
+
+    .btn::before {
+        content: "";
+        @apply absolute inset-0 -z-40 rounded-3xl bg-white hover:scale-x-150 hover:scale-y-125 hover:opacity-0 transition-all duration-500;
+    }
+
+    .btn-primary::before {
+      content: "";
+      @apply absolute inset-0 -z-40 rounded-3xl bg-primary hover:scale-x-150 hover:scale-y-125 hover:opacity-0 transition-all duration-500;
+  }
+
+    .menu::before {
+        content: "";
+        @apply h-[2px] -translate-y-[6px]  peer-checked:translate-y-[1px]   peer-checked:-rotate-45 w-full duration-300 transition-all block bg-grey-dark-3;
+    } 
+
+    .menu::after {
+        content: "";
+        @apply h-[2px]  w-full peer-checked:translate-y-[-2px]  peer-checked:rotate-45 translate-y-[6px] duration-300 transition-all block bg-grey-dark-3;
+    }
+
+    .menu-hover-up{
+      @apply  hover:before:w-full before:w-full
+    }
+
+    .menu-hover-down{
+      @apply before:scale-y-0 before:w-0
+    }
+}
+
+
+
+.perspective {
+    perspective: 1000px;
+  }
+  .flip-card {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Safari */
+  }
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+
+
+  .shape-circle {
+    shape-outside: circle(50%);
+    float: left;
+    width: 90px;
+    height: 90px;
+    clip-path: circle(50%);
+  }
+
+
+
+  .bg-gradient-contact{
+    background:linear-gradient(110deg, rgba(255, 255, 255, 0.733) 0 55%, transparent 50% 100%)
+  }
+
+  @media (max-width: 1100px) {
+    .bg-gradient-contact{
+      background:linear-gradient(110deg, rgba(255, 255, 255, 0.7) 0  100%)
+    }
+  }
+
+
+  .popup-model{
+    display: none;
+  }
+
+  .popup-model:target{
+    display: block;
+  }
+
+  .bg-menu-gradient{
+    background-size: 215%;
+    background-image:linear-gradient(120deg, transparent 0% , transparent 50%, rgba(255, 255, 255, 0.733)  50%)
+  }
+
+  .bg-menu-gradient:hover{
+    background-position: 100%;
+  }
+  
+

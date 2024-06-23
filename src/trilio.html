@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="assets/trilio-image/favicon.png">
+    <link rel="stylesheet" href="./output.css">
+    <title>trillo &mdash; Your all-in-one booking app</title>
+</head>
+
+<body>
+
+    <section class="bg-romanfirst w-full py-14">
+        <!-- wrapper  -->
+        <div class="h-fit overflow-hidden max-w-[1000px] w-full drop-shadow-2xl mx-auto bg-white">
+            <header
+                class="bg-white shadow-sm   px-6 min-h-[80px] h-fit    flex justify-between flex-wrap gap-y-1 pb-1 items-center w-full">
+                <img class="h-12 my-2  object-contain w-12" src="./assets/trilio-image/logo.png" alt="">
+                <div
+                    class="max-w-md md:max-w-sm order-last mx-auto md:mx-0 md:order-2 w-full rounded-3xl h-10 py-2 px-4 bg-romanSecond-grey-light-4/20 flex justify-center items-center gap-x-2">
+                    <input placeholder="Search hotels" type="text" autocomplete="additional-name" autocapitalize="on"
+                        class="outline-none caret-romanfirst-light h-full bg-transparent placeholder:text-sm text-sm   placeholder:text-romanSecond-grey-dark-3  w-full rounded-2xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 stroke-romanfirst cursor-pointer ">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+
+                </div>
+
+                <div class="flex  h-full  order-3  items-center">
+                    <div
+                        class="relative cursor-pointer  h-full md:w-[75px] w-[55px]  flex justify-center items-center hover:bg-romanSecond-grey-dark-3/10">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="md:size-8 size-7 fill-romanSecond-grey-dark-1">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                        </svg>
+
+                        <div
+                            class="h-5 w-5 p-1 text-sm absolute top-[20%] right-[20%] flex justify-center items-center rounded-full bg-romanfirst-light text-white shadow-md">
+                            7
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="relative cursor-pointer  h-full md:w-[75px] w-[55px]    flex justify-center items-center hover:bg-romanSecond-grey-dark-3/10">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="md:size-8 size-7 fill-romanSecond-grey-dark-1">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+                        </svg>
+
+                        <div
+                            class="h-5 w-5 p-1 text-sm absolute top-[20%] right-[20%] flex justify-center items-center rounded-full bg-romanfirst-light text-white shadow-md">
+                            7
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="flex ml-3  items-center cursor-pointer rounded-2xl outline-1 outline-romanSecond-grey-dark-3 shadow-md">
+                        <img class="h-10 w-10 py-[2px] px-[3px] rounded-full object-cover overflow-hidden"
+                            src="./assets/trilio-image/user-1.jpg" alt="dp">
+                        <h6 class="capitalize pl-1 pr-4 text-sm font-medium text-romanSecond-grey-dark-3">Rohit</h6>
+                    </div>
+
+
+                </div>
+            </header>
+
+            <!-- sidebar  -->
+            <aside
+                class="py-8  hidden md:flex md:flex-col  fixed space-y-2  w-[170px] h-full text-white bg-romanSecond-grey-dark-1">
+                <div
+                    class="flex menuItem cursor-pointer z-10 py-3.5  relative items-center gap-x-4  before:content-[''] before:absolute before:duration-300 before:transition-all before:bg-romanfirst-light  before:-z-10 transition-all duration-300  before:h-full  ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 fill-white ml-3">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                    <h6 class="uppercase text-sm font-semibold font-opensans">hotel</h6>
+                </div>
+
+                <div
+                    class="flex menuItem cursor-pointer z-10 py-3.5  relative items-center gap-x-4  before:content-[''] before:absolute before:duration-300 before:transition-all before:bg-romanfirst-light  before:-z-10 transition-all duration-300  before:h-full  ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 fill-white ml-3">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                    </svg>
+
+                    <h6 class="uppercase text-sm font-semibold font-opensans">Flight</h6>
+                </div>
+
+                <div
+                    class="flex menuItem cursor-pointer z-10 py-3.5  relative items-center gap-x-4  before:content-[''] before:absolute before:duration-300 before:transition-all before:bg-romanfirst-light  before:-z-10 transition-all duration-300  before:h-full  ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 ml-3 fill-white">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.75 5.25a3 3 0 0 1 3 3m3 0a6 6 0 0 1-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1 1 21.75 8.25Z" />
+                    </svg>
+
+                    <h6 class="uppercase text-sm font-semibold font-opensans">car rental</h6>
+                </div>
+
+
+                <div
+                    class="flex menuItem cursor-pointer z-10 py-3.5  relative items-center gap-x-4  before:content-[''] before:absolute before:duration-300 before:transition-all before:bg-romanfirst-light  before:-z-10 transition-all duration-300  before:h-full  ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 fill-white ml-3">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3" />
+                    </svg>
+
+                    <h6 class="uppercase text-sm font-semibold font-opensans">tours</h6>
+                </div>
+
+                <p class="text-center relative top-2/3  text-romanSecond-grey-dark-2 text-sm">
+                    copyight, all
+                    rights
+                    reserved
+                </p>
+
+            </aside>
+
+
+            <article class="md:ml-[170px] overflow-hidden max-h-[200px] h-full ml-0 grid grid-cols-3">
+                <img class="bg-cover h-full w-full" src="./assets/trilio-image/hotel-1.jpg" alt="">
+                <img class="bg-cover h-full w-full" src="./assets/trilio-image/hotel-2.jpg" alt="">
+                <img class="bg-cover h-full w-full" src="./assets/trilio-image/hotel-3.jpg" alt="">
+            </article>
+
+            <div class="md:ml-[170px] ml-0 h-[80px] shadow-md  flex justify-between items-center">
+                <div class="h-full flex flex-col md:flex-row justify-center md:justify-start items-center gap-x-5 ml-4">
+                    <h4 class="uppercase font-light  font-opensans text-romanSecond-grey-dark-1  text-md md:text-2xl">
+                        HOTEL
+                        LAS
+                        PALMAS
+                    </h4>
+                    <div class="flex ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-3 md:size-6 fill-romanfirst-light stroke-romanfirst-light">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-3 md:size-6 fill-romanfirst-light stroke-romanfirst-light">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-3 md:size-6 fill-romanfirst-light stroke-romanfirst-light">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-3 md:size-6 fill-romanfirst-light stroke-romanfirst-light">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-3 md:size-6 fill-romanfirst-light stroke-romanfirst-light">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="flex gap-x-5  h-full items-center">
+                    <div class="flex text-romanfirst-light text-xs">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-4 stroke-romanfirst-light">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                        </svg>
+
+                        <h6 class="ml-1 capitalize underline underline-offset-4">Texas,USA</h6>
+                    </div>
+
+                    <div class="bg-romanfirst h-full px-3 md:px-6 text-white flex flex-col justify-center items-center">
+                        <h4 class="font-semibold text-xl font-opensans">8.6</h4>
+                        <h6 class="uppercase text-xs  font-opensans">429 votes</h6>
+                    </div>
+                </div>
+
+            </div>
+
+            <main class="md:ml-[170px] ml-0 bg-romanSecond-grey-light-4/40 p-5">
+                <div class="flex flex-col md:flex-row gap-x-6 gap-y-6">
+                    <div class="shadow-xl rounded-sm p-6 bg-romanSecond-grey-light-1 md:basis-2/3  flex-1 w-full">
+                        <div class="pb-8 text-md border-b-2">
+                            <p class="text-romanSecond-grey-dark-1 font-normal mb-4 font-opensans leading-normal">Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Sint nisi aspernatur delectus, ullam
+                                commodi eius doloremque dolore, amet natus veniam officia distinctio. Saepe culpa
+                                voluptates
+                                tempora adipisci et asperiores vitae?</p>
+                            <p class="text-romanSecond-grey-dark-1 font-normal font-opensans leading-normal">Lorem ipsum
+                                dolor sit amet consectetur, adipisicing elit. Adipisci officia animi enim accusantium
+                                qui
+                                dolor exercitationem et dolorem voluptates aliquid. Magnam illo ipsam officia
+                                perferendis
+                                hic iure eligendi repellendus laudantium.</p>
+                        </div>
+                        <div class="columns-2 py-8 ">
+                            <ul class="space-y-2">
+                                <li class="flex items-center gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-4 stroke-romanfirst-light">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                    <h6 class="font-opensans text-romanSecond-grey-dark-1 font-light text-sm">Close to
+                                        the
+                                        beach</h6>
+                                </li>
+                                <li class="flex items-center gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-4 stroke-romanfirst-light">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                    <h6 class="font-opensans text-romanSecond-grey-dark-1 font-normal text-sm">Close to
+                                        the
+                                        beach</h6>
+                                </li>
+
+                                <li class="flex items-center gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-4 stroke-romanfirst-light">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                    <h6 class="font-opensans text-romanSecond-grey-dark-1 font-normal text-sm">Close to
+                                        the
+                                        beach</h6>
+                                </li>
+
+                                <li class="flex items-center gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-4 stroke-romanfirst-light">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                    <h6 class="font-opensans text-romanSecond-grey-dark-1 font-normal text-sm">Close to
+                                        the
+                                        beach</h6>
+                                </li>
+
+                                <li class="flex items-center gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-4 stroke-romanfirst-light">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                    <h6 class="font-opensans text-romanSecond-grey-dark-1 font-normal text-sm">Close to
+                                        the
+                                        beach</h6>
+                                </li>
+
+                            </ul>
+
+                            <ul class="space-y-2">
+                                <li class="flex items-center gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-4 stroke-romanfirst-light">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                    <h6 class="font-opensans text-romanSecond-grey-dark-1 font-normal text-sm">Close to
+                                        the
+                                        beach</h6>
+                                </li>
+                                <li class="flex items-center gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-4 stroke-romanfirst-light">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                    <h6 class="font-opensans text-romanSecond-grey-dark-1 font-normal text-sm">Close to
+                                        the
+                                        beach</h6>
+                                </li>
+
+                                <li class="flex items-center gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-4 stroke-romanfirst-light">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                    <h6 class="font-opensans text-romanSecond-grey-dark-1 font-normal text-sm">Close to
+                                        the
+                                        beach</h6>
+                                </li>
+
+                                <li class="flex items-center gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-4 stroke-romanfirst-light">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                    <h6 class="font-opensans text-romanSecond-grey-dark-1 font-normal text-sm">Close to
+                                        the
+                                        beach</h6>
+                                </li>
+
+                                <li class="flex items-center gap-x-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-4 stroke-romanfirst-light">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                    </svg>
+                                    <h6 class="font-opensans text-romanSecond-grey-dark-1 font-normal text-sm">Close to
+                                        the
+                                        beach</h6>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="py-8 border-t-2 flex w-full items-center justify-between">
+                            <p class="font-opensans  text-sm font-semibold text-romanSecond-grey-dark-2">
+                                Lucy and 3 other friend recommend this hotel.
+                            </p>
+                            <div class="relative flex shrink-0 -space-x-3">
+                                <img class="w-10 h-10 border-2 border-white rounded-full object-cover"
+                                    src="./assets/trilio-image/user-3.jpg" alt="">
+                                <img class="w-10 h-10 border-2 border-white rounded-full object-cover"
+                                    src="./assets/trilio-image/user-4.jpg" alt="">
+                                <img class="w-10 h-10 border-2 border-white rounded-full object-cover"
+                                    src="./assets/trilio-image/user-5.jpg" alt="">
+                                <img class="w-10 h-10 border-2 border-white rounded-full object-cover"
+                                    src="./assets/trilio-image/user-6.jpg" alt="">
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex flex-col md:basis-1/3   gap-y-10 ">
+                        <div
+                            class="flex flex-col relative rounded-sm flex-1 h-fit p-6 shadow-lg bg-romanSecond-grey-light-1">
+                            <p
+                                class="md:max-w-[200px] w-full leading-relaxed text-romanSecond-grey-dark-1 font-opensans mb-6">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis illum harum veniam,
+                                laudantium recusandae animi, perspiciatis officia.</p>
+                            <div class="flex items-center">
+                                <img class="h-10 w-10 rounded-full object-cover" src="./assets/trilio-image/user-2.jpg"
+                                    alt="">
+                                <div class="ml-4 ">
+                                    <h6 class="uppercase mb-1 text-sm">Nick smith</h6>
+                                    <h6 class="text-[10px] text-romanSecond-grey-dark-3">Feb 23rd 2017</h6>
+                                </div>
+
+                                <h3 class="text-romanfirst-light text-xl font-opensans font-bold ml-auto">7.8</h3>
+
+                            </div>
+
+                            <div
+                                class="absolute text-[100px] opacity-50 -top-[45px]  -left-[6px]  text-romanSecond-grey-light-4">
+                                &#x275D
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex  flex-col relative overflow-hidden rounded-sm flex-1 h-fit p-6 shadow-lg bg-romanSecond-grey-light-1">
+                            <p
+                                class="md:max-w-[200px] w-full leading-relaxed text-romanSecond-grey-dark-1 font-opensans mb-6">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis illum harum veniam,
+                                laudantium recusandae animi, perspiciatis officia.</p>
+                            <div class="flex items-center">
+                                <img class="h-10 w-10 rounded-full object-cover" src="./assets/trilio-image/user-2.jpg"
+                                    alt="">
+                                <div class="ml-3 ">
+                                    <h6 class="uppercase mb-1 text-sm">Nick smith</h6>
+                                    <h6 class="text-[10px] text-romanSecond-grey-dark-3">Feb 23rd 2017</h6>
+                                </div>
+
+                                <h3 class="text-romanfirst-light text-xl font-opensans font-bold ml-auto">7.8</h3>
+                            </div>
+
+                            <div
+                                class="absolute text-[100px] opacity-50 -top-[45px]  -left-[6px]  text-romanSecond-grey-light-4">
+                                &#x275D
+                            </div>
+                        </div>
+
+
+                        <a class="text-romanfirst-light mx-auto hover:text-romanfirst-dark transition-all duration-200 text-md font-opensans underline underline-offset-4"
+                            href="$">Show all</a>
+
+                    </div>
+
+
+                </div>
+            </main>
+
+
+
+            <footer
+                class="ml-0 md:ml-[170px] border-t-2 flex flex-col text-center space-y-4 justify-center items-center  py-8">
+                <p class="uppercase text-lg font-opensans font-light text-romanSecond-grey-dark-3"> Good News! we have 4
+                    free rooms for your selected dates!
+                </p>
+                <button
+                    class="relative  overflow-hidden group text-sm uppercase h-[55px] w-[200px] rounded-3xl text-white bg-gradient-to-l from-romanfirst-light via-romanfirst to-romanfirst-dark">
+                    <p
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 group-hover:-translate-y-[200px] transition-all duration-500">
+                        Book now!</p>
+                    <p
+                        class="absolute top-1/2   left-1/2 -translate-x-1/2   group-hover:-translate-y-1/2 translate-y-[200px] transition-all duration-500">
+                        Only 4 rooms left!</p>
+                </button>
+
+            </footer>
+        </div>
+
+    </section>
+
+</body>
+<script type="application/javascript" src="./index.js"></script>
+
+</html>
